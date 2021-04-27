@@ -1,0 +1,595 @@
+// This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
+//NEW COLORS
+$primary: #ff0080;
+$secondary: #2d247b;
+$dark: #2b0055;
+$gray: #f1f1f1;
+$accent: #00bdaa;
+$primary-dark: #052a7c;
+$text-sm: 17px;
+$text-md: 25px;
+$text-lg: 30px;
+$text-xl: 45px;
+$text-bold: bold;
+
+$transition: all ease-in-out 0.3s;
+//
+img {
+	max-width: 100%;
+	height: auto;
+}
+#wpadminbar {
+	position: fixed;
+}
+.icon-menu-container {
+	display: none;
+}
+#icon-menu,
+#main-menu {
+	display: none;
+}
+.top-bar-js {
+	box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+	height: 50px;
+}
+
+.price {
+	color: $secondary !important;
+}
+header {
+	.img-fluid {
+		width: 100%;
+		max-width: 120px !important;
+		margin: auto;
+	}
+	height: 80px;
+}
+
+//WOOCOMMERCE header
+.container-header-cart:hover > .header-cart-detail {
+	display: block !important;
+}
+
+.header-cart-detail {
+	min-width: 250px;
+	z-index: 10;
+	left: 0;
+}
+
+.header-cart-detail img {
+	display: block !important;
+	max-width: 150px;
+}
+
+header .remove_from_cart_button {
+	display: inline-block;
+	margin-left: 200px;
+	margin-bottom: 10px;
+}
+
+header .mini_cart_item {
+	border-bottom: solid #ccc;
+	margin-bottom: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+header header .mini_cart_item img {
+	max-width: 100px !important;
+	display: block !important;
+	margin: auto !important;
+}
+
+header .woocommerce-mini-cart__buttons a {
+	display: block;
+	margin-bottom: 0.75rem !important;
+}
+
+header .dgwt-wcas-search-icon,
+header form {
+	float: right;
+	margin-top: 1.75rem !important;
+}
+
+.cover img {
+	height: 600px !important;
+	object-fit: cover;
+	width: 100%;
+	position: absolute;
+}
+.layer {
+	z-index: 1;
+	opacity: 0.5;
+	background: #052a7c;
+}
+
+//////////*****    SPLIDE   ******///////
+.splide button,
+.splide svg {
+	display: block;
+}
+.splide {
+	img {
+		padding: 1rem 0;
+	}
+	button {
+		top: 50%;
+	}
+	svg {
+		margin-left: 6px;
+	}
+}
+
+//////////*****    WOOCOMMERCE HOME SLIDER   ******///////
+.wcps-container .item {
+	border: solid 1px #f1f1f1;
+	padding: 1rem 2rem;
+	margin: 1rem !important;
+	min-width: 180px;
+}
+
+//CUSTOMS
+//.container, .container-fluid , .row { padding: 0;}
+.request img {
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 300px !important;
+}
+.request a {
+	margin-top: 1rem;
+}
+//btns
+.btn {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 0.75rem;
+	border-radius: 0.25rem;
+	padding: 0.375rem 1.5rem;
+}
+.btn-primary {
+	background-color: $primary;
+	color: white;
+}
+.btn-secondary {
+	background-color: $secondary;
+}
+//
+////////////// RIGHT SIDEBAR//////////////////////////
+#right-sidebar ul li a {
+	color: $secondary;
+	display: block;
+	font-weight: bold;
+	border-bottom: solid 1px $gray;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+	transition: $transition;
+}
+#right-sidebar ul li a:hover {
+	background: #f1f1f1;
+	text-decoration: none;
+}
+
+/*PAGE SINGLE*/
+.cover-single {
+	max-height: 300px;
+	overflow: hidden;
+}
+
+//*********  WOOCOMMERCE  ************
+//hidding cart update button
+button[name="update_cart"] {
+	display: none !important;
+}
+//offer
+.onsale {
+	background: $accent !important;
+	color: $dark !important;
+	text-transform: uppercase;
+	padding: 0.75rem 0.5rem !important;
+}
+
+//footer
+footer {
+	h3 {
+		border-bottom: solid 1px;
+		font-weight: 700;
+	}
+	li {
+		margin-bottom: 1rem;
+	}
+	//p, a, h3 { color: $dark;}
+	img {
+		max-width: 30px;
+	}
+	a:hover {
+		color: $primary !important;
+	}
+
+	.block-bottom p {
+		color: $primary;
+	}
+}
+#wrapper-footer-full {
+	background: $secondary;
+	color: $gray;
+}
+
+//My account
+.woocommerce-MyAccount-navigation .list-group-item {
+	display: block;
+	margin: 0.5rem auto;
+	padding: 0.5rem;
+	border: solid 1px;
+	border-radius: 10px;
+	text-align: center;
+	max-width: 180px;
+}
+
+@media screen and (max-width: 768px) {
+	.woocommerce-MyAccount-navigation .list-group-item {
+		display: inline-block;
+	}
+}
+
+//ETC
+a {
+	text-decoration: none;
+}
+.box-shadow,
+.box-article,
+.request img {
+	box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.05);
+}
+.box-article {
+	border: solid 1px $gray;
+}
+
+.border-radius {
+	border-radius: 0.5rem;
+}
+.icons-xl {
+	font-size: 50px;
+}
+.icon-expand-more {
+	position: absolute;
+	margin-top: 5px;
+}
+ul {
+	padding: 0;
+}
+.text-sm {
+	font-size: $text-sm;
+}
+.text-md,
+h3 {
+	font-size: $text-md;
+}
+.text-lg,
+h2 {
+	font-size: $text-lg;
+}
+.text-xl,
+h1 {
+	font-size: $text-xl;
+}
+.text-bold {
+	font-size: $text-bold;
+}
+
+.text-dark {
+	color: $dark;
+}
+
+.transition {
+	transition: $transition;
+}
+
+.bg-white {
+	background-color: white;
+}
+.bg-gray {
+	background-color: $gray;
+}
+.bg-dark {
+	background-color: $dark;
+}
+.bg-accent {
+	background-color: $accent;
+}
+
+.categories img {
+	max-height: 150px;
+	width: auto;
+}
+
+//RESPONSIVE
+//======================================================//
+
+/*NOTE: WP Main(#main-menu ) menu hidden till the page is loades(watch the js file)*/
+
+.main-layer-style {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	width: 100%;
+	max-width: 1500px;
+	height: 100vh;
+	z-index: 10;
+}
+
+.menu-container ul li {
+	background: white;
+}
+.menu-container ul li ul li {
+	display: block;
+	margin: 0px;
+}
+
+.menu-container {
+	background: #1b1b1b;
+}
+
+.menu-container ul {
+	float: right;
+	list-style: none;
+	position: relative;
+	width: 100%;
+}
+
+.menu-container ul li {
+	display: inline-block;
+	margin: 0 5px;
+}
+/* .menu-container ul li:hover > ul{
+			display: block;
+		} */
+.menu-container ul li a {
+	text-decoration: none;
+	padding: 20px 15px;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+.menu-container ul li a:hover {
+	color: #ff0080;
+}
+
+.menu-container ul ul li a:hover {
+	box-shadow: none;
+}
+
+.menu-container ul ul {
+	position: absolute;
+	border-top: 3px solid #ff0080;
+	display: none;
+	margin-top: 10px;
+}
+
+.menu-container ul ul ul {
+	border-top: none;
+}
+
+.menu-container ul ul li {
+	position: relative;
+	margin: 0px;
+	width: 250px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.menu-container ul ul li a {
+	display: block;
+}
+
+.menu-container ul ul ul li {
+	position: relative;
+	top: -64px;
+	left: 250px;
+}
+@media screen and (min-width: 1125px) {
+	.menu-container ul li:hover > ul {
+		display: block;
+	}
+}
+@media screen and (max-width: 1124px) {
+	.icon-menu-container,
+	.icon-line,
+	.menu-container .dropdown-toggle,
+	.menu-container ul,
+	.menu-container li {
+		display: block;
+	}
+
+	header {
+		height: 90px;
+	}
+
+	.header-cart-detail {
+		left: -150px;
+	}
+
+	.splide__arrow {
+		bottom: -15px !important;
+		border: none;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+	}
+
+	.icon-line,
+	.menu-container {
+		transition: $transition;
+	}
+
+	.icon-menu {
+		width: 35px;
+		height: 35px;
+		transform: rotate(-180deg);
+		scale: 1;
+		margin-left: 1rem;
+	}
+
+	.icon-menu:hover {
+		cursor: pointer;
+	}
+
+	.icon-menu {
+		width: 35px;
+		height: 35px;
+		transition: $transition;
+		margin-left: 1rem;
+	}
+	.icon-menu:hover {
+		transition: $transition;
+	}
+	.icon-line {
+		width: 35px;
+		height: 4px;
+		background: $primary;
+		position: absolute;
+		border-radius: 2px;
+		transition: $transition;
+	}
+	.icon-line:nth-child(2) {
+		margin-top: 12px;
+		width: 35px;
+	}
+	.icon-line:nth-child(3) {
+		margin-top: 25px;
+		width: 35px;
+	}
+
+	.menu-container {
+		margin-top: 20px;
+	}
+
+	.menu-container, .main-menu {
+		margin-top: 20px;
+	}
+	.main-menu {
+		padding: 30px;
+	}
+
+	.menu-container ul li {
+		margin: 0;
+	}
+	.menu-container ul li {
+		width: 100%;
+	}
+
+	.menu-container ul ul ul li {
+		left: 0px;
+		top: 0px;
+	}
+
+	.menu-container .dropdown-toggle {
+		min-width: 220px;
+	}
+	.menu-container ul {
+		float: none;
+	}
+
+	.menu-container .dropdown-toggle,
+	.menu-container ul,
+	.menu-container li {
+		position: relative !important;
+	}
+
+	.menu-container ul li a {
+		padding: 10px 20px;
+		display: block;
+	}
+
+	.menu-container {
+		position: absolute !important;
+		z-index: 1;
+		visibility: hidden;
+		opacity: 0;
+		transition: visibility 0s, opacity 0.2s linear;
+	}
+
+	.menu-container,
+	.main-menu {
+		margin-top: 20px;
+	}
+	.main-menu {
+		background: white;
+		border-radius: 0 0 0.5rem 0;
+		max-width: 300px;
+		position: relative !important;
+		max-height: 80vh;
+		overflow-y: scroll;
+	}
+
+	//WOOCOMMERCE
+	header .dgwt-wcas-search-wrapp {
+		max-width: 50px;
+	}
+	/*Estilos js*/
+	.rotate-1 {
+		transform: rotate(45deg);
+		margin-top: 12px;
+		background: $dark;
+		width: 30px !important;
+	}
+	.opacity-line-0 {
+		width: 0 !important;
+		opacity: 0;
+	}
+	.rotate-2 {
+		transform: rotate(-45deg);
+		margin-top: 12px !important;
+		background: $dark;
+		width: 30px !important;
+	}
+
+	.d-menu {
+		visibility: visible;
+		opacity: 1;
+	}
+	iframe {
+		max-height: 480px;
+	}
+	.thumb-container-single {
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.menu-container {
+		width: 100vw;
+		margin-top: 0;
+	}
+	.border-radius {
+		border-radius: 0;
+	}
+	.btn {
+		letter-spacing: 1px;
+		padding: 0.375rem 1.25rem;
+	}
+	.text-sm {
+		font-size: 18px;
+	}
+	.text-lg {
+		font-size: 28px;
+	}
+	.text-xl {
+		font-size: 35px;
+	}
+	header {
+		height: 80px;
+	}
+	.request img {
+		display: none;
+	}
+	.thumb-container {
+		height: 120px;
+		margin-bottom: 1.25rem;
+	}
+	.box-article {
+		box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+		border: 0;
+		border-bottom: solid 1px $gray;
+	}
+
+	#wrapper-footer-full .textwidget {
+		text-align: center;
+	}
+}
+// purgecss --css style.css --content *.php --out ./
